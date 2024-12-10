@@ -6,7 +6,7 @@ select
 From Employee e
     where primary_flag = 'Y'
 
-Union 
+Union all
 
 select 
     employee_id, department_id
