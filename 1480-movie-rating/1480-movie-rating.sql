@@ -1,18 +1,21 @@
-# Write your MySQL query statement below
 
-(select name as results from (
-select u.name, count(mr.movie_id)
-from movierating mr join users u 
-on u.user_id = mr.user_id join movies m on m.movie_id=mr.movie_id
+
+(Select u.name results
+From Users u join Movierating m
+on u.user_id = m.user_id
 group by u.user_id
-order by count(mr.movie_id) desc, u.name asc) d limit 1)
+order by count(m.user_id) desc, u.name
+limit 1 )
 
-union all
+Union all
+(
+Select m1.title as results
+From movies m1 join Movierating m2
+on m1.movie_id = m2.movie_id
+where Date_format(created_at,'%Y%m') = '202002'
+group by m2.movie_id
+order by avg(m2.rating) desc, m1.title
+limit 1
+)
 
-(select title as results from 
-(select m.title, AVG(mr.rating)
-from movierating mr join users u 
-on u.user_id = mr.user_id join movies m on m.movie_id=mr.movie_id
-where date_format(created_at,"%M %Y")='February 2020'
-group by m.movie_id
-order by AVG(mr.rating) desc, m.title asc ) e limit 1)
+
