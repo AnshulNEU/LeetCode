@@ -1,16 +1,10 @@
 # Write your MySQL query statement below
 
-With temp as(
-    Select name,
-    salary,
-    departmentid,
-    Dense_Rank() over (partition by departmentid order by salary desc) as top_salary
-    from employee
-)
-
-select d.name as department, t.name Employee, t.Salary as Salary
-from temp t
-join department d on d.id=t.departmentid
-where top_salary <=3
+Select d.name as department , e1.name as employee, e1.salary as Salary
+From Employee e1 join Department d on e1.DepartmentId = d.Id
+Where  3 > (select count(distinct (e2.Salary))
+            from  Employee e2
+            where e2.Salary > e1.Salary
+            and e1.DepartmentId = e2.DepartmentId)
 
 
