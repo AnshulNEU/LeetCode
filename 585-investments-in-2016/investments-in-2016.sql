@@ -8,11 +8,12 @@ WHERE tiv_2015 IN (
     GROUP BY tiv_2015
     HAVING COUNT(*) > 1
 )
-AND (lat, lon) IN (
-    SELECT lat, lon
-    FROM Insurance
-    GROUP BY lat, lon
-    HAVING COUNT(*) = 1
+AND NOT EXISTS (
+    SELECT 1
+    FROM Insurance AS i2
+    WHERE Insurance.lat = i2.lat
+      AND Insurance.lon = i2.lon
+      AND Insurance.pid != i2.pid
 );
 
 
