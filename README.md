@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0180-consecutive-numbers](https://github.com/AnshulNEU/LeetCode/tree/master/0180-consecutive-numbers) |
 | [0185-department-top-three-salaries](https://github.com/AnshulNEU/LeetCode/tree/master/0185-department-top-three-salaries) |
 | [0570-managers-with-at-least-5-direct-reports](https://github.com/AnshulNEU/LeetCode/tree/master/0570-managers-with-at-least-5-direct-reports) |
+| [0585-investments-in-2016](https://github.com/AnshulNEU/LeetCode/tree/master/0585-investments-in-2016) |
 | [0596-classes-more-than-5-students](https://github.com/AnshulNEU/LeetCode/tree/master/0596-classes-more-than-5-students) |
 | [0610-triangle-judgement](https://github.com/AnshulNEU/LeetCode/tree/master/0610-triangle-judgement) |
 | [0619-biggest-single-number](https://github.com/AnshulNEU/LeetCode/tree/master/0619-biggest-single-number) |
