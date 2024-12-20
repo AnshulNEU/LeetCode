@@ -1,5 +1,6 @@
 # Write your MySQL query statement below
 
+
 SELECT ROUND(SUM(tiv_2016), 2) AS tiv_2016
 FROM (
     SELECT 
@@ -9,10 +10,5 @@ FROM (
     FROM Insurance
 ) AS filtered
 WHERE tiv_2015_count > 1 AND location_count = 1;
-
-
-
-
-
 
 
