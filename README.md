@@ -43,4 +43,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/AnshulNEU/LeetCode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
+## Math
+|  |
+| ------- |
+| [1146-greatest-common-divisor-of-strings](https://github.com/AnshulNEU/LeetCode/tree/master/1146-greatest-common-divisor-of-strings) |
+## String
+|  |
+| ------- |
+| [1146-greatest-common-divisor-of-strings](https://github.com/AnshulNEU/LeetCode/tree/master/1146-greatest-common-divisor-of-strings) |
 <!---LeetCode Topics End-->
