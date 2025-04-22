@@ -2,4 +2,4 @@
 
 select product_id
 from products
-where low_fats like 'Y' and recyclable like 'Y'
+where low_fats = 'Y' and recyclable = 'Y'
