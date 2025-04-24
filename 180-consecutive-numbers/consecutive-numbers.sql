@@ -1,13 +1,5 @@
 
-Select distinct(num) ConsecutiveNums from 
-(
-select num, lead(num) Over (order by id) as next_num, lag(num) over (order by id) as prev_num
-from logs) as p
-where num=next_num and num=prev_num
-
-/* SELECT DISTINCT num as ConsecutiveNums
-FROM (
-    SELECT num, LEAD(num) OVER (ORDER BY id) as next_num, LAG(num) OVER (ORDER BY id) as prev_num
-    FROM Logs
-) temp
-WHERE num = next_num AND num = prev_num; */
+select distinct l1.num ConsecutiveNums
+from logs l1 join logs l2 join logs l3
+on  l2.id+1 = l3.id and l2.id-1=l1.id
+where l1.num = l2.num and l2.num = l3.num and l1.num = l3.num
