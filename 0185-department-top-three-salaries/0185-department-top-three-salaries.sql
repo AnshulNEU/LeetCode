@@ -1,23 +1,10 @@
 # Write your MySQL query statement below
 
-
-
-# Write your MySQL query statement below
-
-WITH RankedSalaries AS (
-    SELECT 
-        e.name AS Employee,
-        d.name AS Department,
-        e.salary,
-        DENSE_RANK() OVER (PARTITION BY e.departmentId ORDER BY e.salary DESC) AS rnk
-    FROM Employee e
-    JOIN Department d ON e.departmentId = d.id
+with cte as (
+select *, dense_rank () over (partition by departmentId order by salary desc) as ra  
+from employee
 )
-SELECT Department, Employee, Salary
-FROM RankedSalaries
-WHERE rnk <= 3;
 
-
-
-
-
+select d.name as Department, c.name as employee, salary
+from cte c join Department d on c.departmentid = d.id
+where ra <4
