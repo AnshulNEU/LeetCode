@@ -1,15 +1,8 @@
 # Write your MySQL query statement below
 
 
-with min_order_date as 
-(select min(order_date) as order_date, customer_id from delivery group by customer_id)
 
-select Round((count(d.delivery_id)/(select count(*) from min_order_date))*100, 2) as immediate_percentage
-from delivery d join min_order_date m 
-on d.order_date=m.order_date and d.customer_id=m.customer_id
-where m.order_date=d.customer_pref_delivery_date
-
-
-
-
-
+select round(sum(case when order_date = customer_pref_delivery_date then 1 else 0 end)/count(delivery_id)*100,2) as immediate_percentage from
+(select *, row_number() over (partition by customer_id order by order_date ) as rn 
+from delivery) d
+where d.rn = 1
