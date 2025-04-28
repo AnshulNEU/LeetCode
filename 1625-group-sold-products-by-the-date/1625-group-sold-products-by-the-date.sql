@@ -1,9 +1,7 @@
-# Write your MySQL query statement below
+# Write your MySQL query statement below 
+select sell_date, count(distinct product) num_sold, group_concat(distinct product order by product asc) products
+from activities
+group by sell_date
 
 
-SELECT sell_date, 
-       COUNT(DISTINCT product) AS num_sold,
-       GROUP_CONCAT(DISTINCT product ORDER BY product SEPARATOR ',') AS products
-FROM Activities
-GROUP BY sell_date
-ORDER BY sell_date;
+
