@@ -62,6 +62,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/AnshulNEU/LeetCode/tree/master/0002-add-two-numbers) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/AnshulNEU/LeetCode/tree/master/1146-greatest-common-divisor-of-strings) |
 ## String
 |  |
@@ -95,4 +96,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0334-increasing-triplet-subsequence](https://github.com/AnshulNEU/LeetCode/tree/master/0334-increasing-triplet-subsequence) |
+## Linked List
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/AnshulNEU/LeetCode/tree/master/0002-add-two-numbers) |
+## Recursion
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/AnshulNEU/LeetCode/tree/master/0002-add-two-numbers) |
 <!---LeetCode Topics End-->
