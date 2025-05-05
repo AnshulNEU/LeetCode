@@ -2,8 +2,5 @@
 
 
 select teacher_id, count(distinct subject_id) cnt
-from teacher 
+from Teacher
 group by teacher_id
-
-
-
