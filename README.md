@@ -77,6 +77,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0345-reverse-vowels-of-a-string](https://github.com/AnshulNEU/LeetCode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0392-is-subsequence](https://github.com/AnshulNEU/LeetCode/tree/master/0392-is-subsequence) |
 | [0443-string-compression](https://github.com/AnshulNEU/LeetCode/tree/master/0443-string-compression) |
+| [0763-partition-labels](https://github.com/AnshulNEU/LeetCode/tree/master/0763-partition-labels) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/AnshulNEU/LeetCode/tree/master/1146-greatest-common-divisor-of-strings) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/AnshulNEU/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 ## Two Pointers
@@ -87,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0345-reverse-vowels-of-a-string](https://github.com/AnshulNEU/LeetCode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0392-is-subsequence](https://github.com/AnshulNEU/LeetCode/tree/master/0392-is-subsequence) |
 | [0443-string-compression](https://github.com/AnshulNEU/LeetCode/tree/master/0443-string-compression) |
+| [0763-partition-labels](https://github.com/AnshulNEU/LeetCode/tree/master/0763-partition-labels) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -106,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0334-increasing-triplet-subsequence](https://github.com/AnshulNEU/LeetCode/tree/master/0334-increasing-triplet-subsequence) |
+| [0763-partition-labels](https://github.com/AnshulNEU/LeetCode/tree/master/0763-partition-labels) |
 ## Linked List
 |  |
 | ------- |
@@ -120,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/AnshulNEU/LeetCode/tree/master/0013-roman-to-integer) |
+| [0763-partition-labels](https://github.com/AnshulNEU/LeetCode/tree/master/0763-partition-labels) |
 ## Trie
 |  |
 | ------- |
